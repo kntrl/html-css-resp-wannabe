@@ -97,6 +97,7 @@ img {
   }
 
   /* BLOCCO STEPS */
+  /*I know that grey class container exists. :( */
   #steps.container {
     background-color: lightcoral;
 
@@ -158,8 +159,12 @@ img {
   #steps .row>.left,
   #steps .row>.central,
   #steps .row>.right {
-  width: 100%;
-}
+    width: 100%;
+  }
+
+  #steps.container.grey {
+    background-color: #f9f9f9;
+  }
 
   /* BLOCCO PERCHE*/
   /* now inherited from tablet version */
