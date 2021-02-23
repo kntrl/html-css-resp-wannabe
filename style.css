@@ -75,23 +75,70 @@ img {
 
 /* RESPONSIVE  STYLING*/
 
-/* < 420 px */
 
-@media screen and (max-width: 419px) {
-  
+/* tablet version*/
+
+@media screen and (max-width: 768px) {
   /* COMMON */
   * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+  
+  .row {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
   }
 
   h1 {
-    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
+  /* BLOCCO STEPS */
+  #steps.container {
+    background-color: lightcoral;
+
+  }
+
+  #steps .row>.left,
+  #steps .row>.central {
+  width: 50%;
+  margin-bottom: 15px;
+  }
+
+  #steps .row>.right {
+    width: 50%;
+    margin: auto ;
+    float:none;
+  }
+
+  /* BLOCCO PERCHE*/
+  
+  #why { 
+    background-color:#428bca;
+    padding-bottom: 20px;
+  }
+
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third { 
+    margin: 0;
+  }
+
+  #why hr {
+    margin: 10px 0;
+  }
+
+}
+
+/* < 420 px */
+
+@media screen and (max-width: 419px) {
+  /* COMMON */
+  /* removed reset and some row attributes,now inherited from tablet version */
   .row {
-    width: 100%;
     margin-top: 0;
   }
 
@@ -115,24 +162,24 @@ img {
 }
 
   /* BLOCCO PERCHE*/
-  #why .row>.first,
+  /* now inherited from tablet version */
+  /* #why .row>.first,
   #why .row>.second,
   #why .row>.third {
   margin: 0;
-}
+} */
 
-  #why { 
+  /* now inherited from tablet version */
+  /* #why { 
     background-color:#428bca;
     padding-bottom: 20px;
-  }
+  } */
 
-  #why hr {
+  /* #why hr {
     margin: 10px 0;
-  }
+  } */
 
 
 }
 
 
-
-/* tablet version*/
